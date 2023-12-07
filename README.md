@@ -1,3 +1,5 @@
-# basic-ecommerce-website
-html,css
-This is a basic E-commerce Website made using mainly HTML and CSS and a bit of javascript.
+# Basic E-Commerce Website
+## We Used In This Website
+### *HTML
+### *CSS
+### *Javascript
