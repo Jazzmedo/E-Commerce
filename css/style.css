@@ -424,6 +424,7 @@ height:400px;
     display:flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-right: 20px;
 
 }
 #form-details form input,
