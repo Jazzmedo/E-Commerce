@@ -107,7 +107,7 @@ body {
     left: 20px;
 }
 #rolex{
-    background-image:url(/img/R.jpg) ;
+    background-image:url('../img/R.jpg') ;
     height: 90vh;
     width: 100%;
     background-size: cover;
