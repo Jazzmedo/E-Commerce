@@ -416,7 +416,7 @@ height:400px;
     display: flex;
     justify-content: space-between;
     margin: 30px;
-    padding: 80px;
+    padding: 40px;
     border: 1px solid #e1e1e1;
 }
 #form-details form{
@@ -440,7 +440,7 @@ border: 1px solid #e1e1e1;
 }
 #form-details .people div {
     padding-top: 40px ;
-    padding-left: 10px;
+    padding-left: 15px;
     padding-bottom:34px;
     display: flex;
     align-items: flex-start;
