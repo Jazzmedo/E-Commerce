@@ -21,7 +21,7 @@ if (!isset($_SESSION['valid'])) {
 
 <body>
     <section id="header">
-        <a href="#"><img src="../img/logo.png" class="logo" alt="LuxuryWatches" width="170"></a>
+        <a href="index.php"><img src="../img/logo.png" class="logo" alt="LuxuryWatches" width="170"></a>
 
         <div>
             <ul id="navbar">
