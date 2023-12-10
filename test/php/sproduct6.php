@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+include("config.php");
+if (!isset($_SESSION['valid'])) {
+    header("Location:login.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +28,7 @@
                 <li> <a href="index.php">Home</a> </li>
                 <li> <a href="about.php">About</a> </li>
                 <li> <a href="contact.php">Contact</a> </li>
-                <li> <a href="login.php">Log Out</a> </li>
+                <li> <a href="logout.php">Log Out</a> </li>
             </ul>
         </div>
 
