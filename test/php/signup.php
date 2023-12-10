@@ -21,16 +21,10 @@
       // Verify Unique Email 
       $verify_query = mysqli_query($con, "SELECT email FROM users WHERE email='$email'");
       if (mysqli_num_rows($verify_query) != 0) {
-        echo "<div class='message'>
-          <p>This Email is already used!, Try Another one.</p>
-          </div><br>";
-        echo "<a href='signup.php'><button class='btn'>Go Back</button>";
+        header("Location:used.php");
       } else {
         mysqli_query($con, "INSERT INTO users(username,email,passwordd) VALUES ('$username','$email','$password')") or die("Error Occured!\n");
-        echo "<div class='message'>
-          <p>Registeration Successfully!</p>
-          </div><br>";
-        echo "<a href='index.php'><button class='btn'>Login Now</button>";
+        header("Location:succ.php");
       }
     } else {
       ?>

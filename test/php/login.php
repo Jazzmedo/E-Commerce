@@ -30,11 +30,7 @@ session_start();
         $_SESSION['username'] = $row['username'];
         $_SESSION['id'] = $row['id'];
       } else {
-        echo "<div class='message'>
-                     <p>Wrong Username or Password</p>
-                      </div> <br>";
-        echo "<a href='login.php'><button class='btn'>Go Back</button>";
-
+        header("Location:wrong.php");
       }
       if (isset($_SESSION['valid'])) {
         header("Location: index.php");

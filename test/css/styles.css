@@ -1,5 +1,3 @@
-
-
 * {
   padding: 0;
   margin: 0;
@@ -18,14 +16,17 @@ body {
   grid-gap: 7rem;
   padding: 0 2rem;
 }
+
 .img {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+
 .img img {
   width: 500px;
 }
+
 .login-container {
   display: flex;
   align-items: center;
@@ -56,6 +57,7 @@ form h2 {
   padding: 5px 0;
   border-bottom: 2px solid #d9d9d9;
 }
+
 .input-div:after,
 .input-div::before {
   content: "";
@@ -70,23 +72,29 @@ form h2 {
 .input-div:after {
   right: 50%;
 }
+
 .input-div::before {
   left: 50%;
 }
+
 .input-div.focus .i i {
   color: #000000;
 }
+
 .input-div.focus div h5 {
   top: -5px;
   font-size: 15px;
 }
+
 .input-div.focus:after,
 .input-div.focus:before {
   width: 50%;
 }
+
 .input-div.one {
   margin-top: 0;
 }
+
 .input-div.two {
   margin-top: 4px;
 }
@@ -96,17 +104,18 @@ form h2 {
   justify-content: center;
   align-items: center;
 }
+
 .i i {
   color: #d9d9d9;
   transition: 0.3s;
 }
 
-.input-div > div {
+.input-div>div {
   position: relative;
   height: 45px;
 }
 
-.input-div > div h5 {
+.input-div>div h5 {
   position: absolute;
   left: 10px;
   top: 50%;
@@ -139,9 +148,11 @@ a {
   font-size: 0.9rem;
   transition: 0.3s;
 }
+
 a:hover {
   color: #000000;
 }
+
 .btn {
   display: block;
   width: 100%;
@@ -172,20 +183,25 @@ footer {
   padding-top: 3vh;
   padding-bottom: 1vh;
 }
+
 /* important part for any devices */
 @media screen and (max-width: 1050px) {
   .container {
     grid-gap: 5rem;
   }
+
   body {
     background-color: rgb(86, 153, 216);
   }
+
   form h2 {
     color: whitesmoke;
   }
-  .input-div > div h5 {
+
+  .input-div>div h5 {
     color: snow;
   }
+
   a {
     color: snow;
   }
@@ -195,30 +211,38 @@ footer {
   form {
     width: 290px;
   }
+
   form h2 {
     font-size: 2.4rem;
     margin: 8px 0;
   }
+
   .img img {
     width: 400px;
   }
+
   body {
     background-color: blueviolet;
   }
+
   form h2 {
     color: whitesmoke;
   }
-  .input-div > div h5 {
+
+  .input-div>div h5 {
     color: snow;
   }
+
   a {
     color: snow;
   }
 }
+
 @media screen and (max-width: 900px) {
   .img {
     display: none;
   }
+
   .container {
     grid-template-columns: 1fr;
   }
@@ -226,60 +250,25 @@ footer {
   .login-container {
     justify-content: center;
   }
+
   footer {
     width: auto;
     height: auto;
   }
+
   body {
     background-color: black;
   }
+
   form h2 {
     color: whitesmoke;
   }
-  .input-div > div h5 {
+
+  .input-div>div h5 {
     color: snow;
   }
+
   a {
     color: snow;
   }
-}
-/*=========== Pop Up Form =============*/
-.popup {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.233);
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  filter: blur(5px);
-}
-
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0);
-  backdrop-filter: blur(10px);
-  z-index: 900;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.popup-content {
-  text-align: center;
-}
-
-.popup-form {
-  display: grid;
-  grid-gap: 10px;
 }
