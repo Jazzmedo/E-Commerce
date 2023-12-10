@@ -1,0 +1,285 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7rem;
+  padding: 0 2rem;
+}
+.img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.img img {
+  width: 500px;
+}
+.login-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.avator {
+  width: 100px;
+}
+
+form {
+  width: 360px;
+}
+
+form h2 {
+  font-size: 2.9rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 15px 0;
+  color: #333;
+}
+
+.input-div {
+  position: relative;
+  display: grid;
+  grid-template-columns: 7% 93%;
+  margin: 25px 0;
+  padding: 5px 0;
+  border-bottom: 2px solid #d9d9d9;
+}
+.input-div:after,
+.input-div::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #000000;
+  transition: 0.3s;
+}
+
+.input-div:after {
+  right: 50%;
+}
+.input-div::before {
+  left: 50%;
+}
+.input-div.focus .i i {
+  color: #000000;
+}
+.input-div.focus div h5 {
+  top: -5px;
+  font-size: 15px;
+}
+.input-div.focus:after,
+.input-div.focus:before {
+  width: 50%;
+}
+.input-div.one {
+  margin-top: 0;
+}
+.input-div.two {
+  margin-top: 4px;
+}
+
+.i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.i i {
+  color: #d9d9d9;
+  transition: 0.3s;
+}
+
+.input-div > div {
+  position: relative;
+  height: 45px;
+}
+
+.input-div > div h5 {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.2rem;
+  color: #555;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #999;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+a:hover {
+  color: #000000;
+}
+.btn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #000000, #000000, #000000);
+  cursor: pointer;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-size: 200%;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-position: right;
+}
+
+footer {
+  width: 100%;
+  background-color: #32323267;
+  color: #f2f2f2;
+  height: 8vh;
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: 1vh;
+}
+/* important part for any devices */
+@media screen and (max-width: 1050px) {
+  .container {
+    grid-gap: 5rem;
+  }
+  body {
+    background-color: rgb(86, 153, 216);
+  }
+  form h2 {
+    color: whitesmoke;
+  }
+  .input-div > div h5 {
+    color: snow;
+  }
+  a {
+    color: snow;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  form {
+    width: 290px;
+  }
+  form h2 {
+    font-size: 2.4rem;
+    margin: 8px 0;
+  }
+  .img img {
+    width: 400px;
+  }
+  body {
+    background-color: blueviolet;
+  }
+  form h2 {
+    color: whitesmoke;
+  }
+  .input-div > div h5 {
+    color: snow;
+  }
+  a {
+    color: snow;
+  }
+}
+@media screen and (max-width: 900px) {
+  .img {
+    display: none;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .login-container {
+    justify-content: center;
+  }
+  footer {
+    width: auto;
+    height: auto;
+  }
+  body {
+    background-color: black;
+  }
+  form h2 {
+    color: whitesmoke;
+  }
+  .input-div > div h5 {
+    color: snow;
+  }
+  a {
+    color: snow;
+  }
+}
+/*=========== Pop Up Form =============*/
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.233);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  filter: blur(5px);
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(10px);
+  z-index: 900;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-form {
+  display: grid;
+  grid-gap: 10px;
+}
