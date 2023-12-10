@@ -7,7 +7,7 @@ session_start();
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sign Up</title>
+  <title>Login</title>
   <link rel="stylesheet" href="../css/styles.css" />
   <script src="https://kit.fontawesome.com/a81368914c.js"></script>
   <link rel="icon" type="image/x-icon" href="../img/Logo.ico">
