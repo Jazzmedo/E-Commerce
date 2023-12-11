@@ -42,7 +42,7 @@ if (!isset($_SESSION['valid'])) {
             <h4>Rolex Tudor Heritage Black</h4>
             <h3>$40000.00</h3>
             <br>
-            <input type="number" value="1">
+            <input type="number" value="1" min = "1" max="10">
             <button class="norm">Add to Cart</button>
 
         </div>
