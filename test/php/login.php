@@ -1,5 +1,8 @@
 <?php
 session_start();
+if (isset($_SESSION['valid'])) {
+  header("Location:logout.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +19,6 @@ session_start();
 <body>
   <div class="container">
     <?php
-
     include("config.php");
     if (isset($_POST['submit'])) {
       $email = mysqli_real_escape_string($con, $_POST['email']);
