@@ -52,27 +52,27 @@
               <h5>Email</h5>
               <input class="input" name="email" id="email" type="email" required />
             </div>
-          </div>
-          <div class="input-div" two>
-            <div class="i">
-              <i class="fas fa-lock"></i>
+            <div class="input-div" two>
+              <div class="i">
+                <i class="fas fa-lock"></i>
+              </div>
+              <div>
+                <h5>Password</h5>
+                <input class="input" name="password" id="password" type="password" required />
+              </div>
             </div>
-            <div>
-              <h5>Password</h5>
-              <input class="input" name="password" id="password" type="password" required />
+            <div class='field'>
+              <input type="submit" class="btn" name='submit' value="Sign Up" />
             </div>
-          </div>
-          <div class='field'>
-            <input type="submit" class="btn" name='submit' value="Sign Up" />
-          </div>
-          <div class='links'>
-            <a href="login.php">Already Have Account? Login Now</a>
-          </div>
+            <div class='links'>
+              <a href="login.php">Already Have Account? Login Now</a>
+            </div>
         </form>
       </div>
     <?php } ?>
   </div>
-  <script type="text/javascript" src="../js/main.js"></script>
+  <script type="text/javascript" src="../js/main.js">
+  </script>
 </body>
 
 </html>

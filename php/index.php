@@ -36,9 +36,8 @@ if (!isset($_SESSION['valid'])) {
 <section class="section-p1 Product1">
     <h2>Featured Products</h2>
     <div class="pro_container">
-        <a href="sproduct.php " style="text-decoration: none;">
-
-            <div class="pro" for="abba">
+        <a href="sproduct.php " class="all">
+            <div class="pro">
                 <img src="../img/watch.jpg" alt="">
                 <div class="des">
                     <span>Watch</span>
@@ -55,7 +54,7 @@ if (!isset($_SESSION['valid'])) {
                 <a href="sproduct.php"><i class="fa-solid fa-bag-shopping cart2"></i></a>
             </div>
         </a>
-        <a href="sproduct2.php" style="text-decoration: none;">
+        <a href="sproduct2.php" class="all">
             <div class="pro">
                 <img src="../img/watch2.jpg" alt="">
                 <div class="des">
@@ -74,7 +73,7 @@ if (!isset($_SESSION['valid'])) {
 
             </div>
         </a>
-        <a href="sproduct3.php" style="text-decoration: none;">
+        <a href="sproduct3.php" class="all">
             <div class="pro">
                 <img src="../img/watch3.jpg" alt="">
                 <div class="des">
@@ -93,7 +92,7 @@ if (!isset($_SESSION['valid'])) {
 
             </div>
         </a>
-        <a href="sproduct4.php" style="text-decoration: none;">
+        <a href="sproduct4.php" class="all">
             <div class="pro">
                 <img src="../img/watch4.jpg" alt="">
                 <div class="des">
@@ -113,7 +112,7 @@ if (!isset($_SESSION['valid'])) {
 
             </div>
         </a>
-        <a href="sproduct5.php" style="text-decoration: none;">
+        <a href="sproduct5.php" class="all">
             <div class="pro">
                 <img src="../img/watch5.jpg" alt="">
                 <div class="des">
@@ -132,7 +131,7 @@ if (!isset($_SESSION['valid'])) {
 
             </div>
         </a>
-        <a href="sproduct6.php" style="text-decoration: none;">
+        <a href="sproduct6.php" class="all">
             <div class="pro">
                 <img src="../img/watch6.jpg" alt="">
                 <div class="des">
@@ -151,7 +150,7 @@ if (!isset($_SESSION['valid'])) {
 
             </div>
         </a>
-        <a href="sproduct7.php" style="text-decoration: none;">
+        <a href="sproduct7.php" class="all">
             <div class="pro">
                 <img src="../img/watch7.jpg" alt="">
                 <div class="des">
@@ -171,7 +170,7 @@ if (!isset($_SESSION['valid'])) {
 
             </div>
         </a>
-        <a href="sproduct8.php" style="text-decoration: none;">
+        <a href="sproduct8.php" class="all">
             <div class="pro">
                 <img src="../img/watch9.jpg" alt="">
                 <div class="des">
