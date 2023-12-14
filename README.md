@@ -1,5 +1,5 @@
 # Basic E-Commerce Website
-[Screenshot-2023-12-15-014631.png](https://postimg.cc/LJ9w7nKL)
+<img src="https://i.postimg.cc/Cxk0RqcP/Screenshot-2023-12-15-014631.png"><br>
 ## We Used In This Website
 
 ![Static Badge](https://img.shields.io/badge/php-777BB4?style=for-the-badge&logo=php&labelColor=black)\
