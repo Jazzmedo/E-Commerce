@@ -36,142 +36,159 @@ if (!isset($_SESSION['valid'])) {
 <section class="section-p1 Product1">
     <h2>Featured Products</h2>
     <div class="pro_container">
-        <div class="pro">
-            <img src="../img/watch.jpg" alt="">
-            <div class="des">
-                <span>Watch</span>
-                <h5>Rolex Oyster Perpetual</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>$25000.00</h4>
-            </div>
-            <a href="sproduct.php"><i class="fa-solid fa-bag-shopping cart2"></i></a>
-        </div>
-        <div class="pro">
-            <img src="../img/watch2.jpg" alt="">
-            <div class="des">
-                <span>Watch</span>
-                <h5>Rolex Cosmograph Daytona</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>$30000.00</h4>
-            </div>
-            <a href="sproduct2.php"><i class="fa-solid fa-bag-shopping cart2"></i></a>
+        <a href="sproduct.php " style="text-decoration: none;">
 
-        </div>
-        <div class="pro">
-            <img src="../img/watch3.jpg" alt="">
-            <div class="des">
-                <span>Watch</span>
-                <h5>Rolex Yachtmaster</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+            <div class="pro" for="abba">
+                <img src="../img/watch.jpg" alt="">
+                <div class="des">
+                    <span>Watch</span>
+                    <h5>Rolex Oyster Perpetual</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$25000.00</h4>
                 </div>
-                <h4>$20000.00</h4>
+                <a href="sproduct.php"><i class="fa-solid fa-bag-shopping cart2"></i></a>
             </div>
-            <a href="sproduct3.php"><i class="fa-solid fa-bag-shopping cart2"></i></a>
-
-        </div>
-        <div class="pro">
-            <img src="../img/watch4.jpg" alt="">
-            <div class="des">
-                <span>Watch</span>
-                <h5>Rolex GMT-Master II </h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-
+        </a>
+        <a href="sproduct2.php" style="text-decoration: none;">
+            <div class="pro">
+                <img src="../img/watch2.jpg" alt="">
+                <div class="des">
+                    <span>Watch</span>
+                    <h5>Rolex Cosmograph Daytona</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$30000.00</h4>
                 </div>
-                <h4>$30000.00</h4>
-            </div>
-            <a href="sproduct4.php"><i class="fa-solid fa-bag-shopping cart2"></i></a>
+                <a href="sproduct2.php"><i class="fa-solid fa-bag-shopping cart2"></i></a>
 
-        </div>
-        <div class="pro">
-            <img src="../img/watch5.jpg" alt="">
-            <div class="des">
-                <span>Watch</span>
-                <h5>Rolex Tudor Heritage Black</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+            </div>
+        </a>
+        <a href="sproduct3.php" style="text-decoration: none;">
+            <div class="pro">
+                <img src="../img/watch3.jpg" alt="">
+                <div class="des">
+                    <span>Watch</span>
+                    <h5>Rolex Yachtmaster</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$20000.00</h4>
                 </div>
-                <h4>$40000.00</h4>
-            </div>
-            <a href="sproduct5.php"><i class="fa-solid fa-bag-shopping cart2"></i></a>
+                <a href="sproduct3.php"><i class="fa-solid fa-bag-shopping cart2"></i></a>
 
-        </div>
-        <div class="pro">
-            <img src="../img/watch6.jpg" alt="">
-            <div class="des">
-                <span>Watch</span>
-                <h5>Rolex Submariner Golden </h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+            </div>
+        </a>
+        <a href="sproduct4.php" style="text-decoration: none;">
+            <div class="pro">
+                <img src="../img/watch4.jpg" alt="">
+                <div class="des">
+                    <span>Watch</span>
+                    <h5>Rolex GMT-Master II </h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                    </div>
+                    <h4>$30000.00</h4>
                 </div>
-                <h4>$35000.00</h4>
+                <a href="sproduct4.php"><i class="fa-solid fa-bag-shopping cart2"></i></a>
+
             </div>
-            <a href="sproduct6.php"><i class="fa-solid fa-bag-shopping cart2"></i></a>
-
-        </div>
-        <div class="pro">
-            <img src="../img/watch7.jpg" alt="">
-            <div class="des">
-                <span>Watch</span>
-                <h5>Rolex Sea-Dweller</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-
+        </a>
+        <a href="sproduct5.php" style="text-decoration: none;">
+            <div class="pro">
+                <img src="../img/watch5.jpg" alt="">
+                <div class="des">
+                    <span>Watch</span>
+                    <h5>Rolex Tudor Heritage Black</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$40000.00</h4>
                 </div>
-                <h4>$25000.00</h4>
-            </div>
-            <a href="sproduct7.php"><i class="fa-solid fa-bag-shopping cart2"></i></a>
+                <a href="sproduct5.php"><i class="fa-solid fa-bag-shopping cart2"></i></a>
 
-        </div>
-        <div class="pro">
-            <img src="../img/watch9.jpg" alt="">
-            <div class="des">
-                <span>Watch</span>
-                <h5>Rolex Archetypal Dive Watch</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>$80000.00</h4>
             </div>
-            <a href="sproduct8.php"><i class="fa-solid fa-bag-shopping cart2"></i></a>
-        </div>
+        </a>
+        <a href="sproduct6.php" style="text-decoration: none;">
+            <div class="pro">
+                <img src="../img/watch6.jpg" alt="">
+                <div class="des">
+                    <span>Watch</span>
+                    <h5>Rolex Submariner Golden </h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$35000.00</h4>
+                </div>
+                <a href="sproduct6.php"><i class="fa-solid fa-bag-shopping cart2"></i></a>
+
+            </div>
+        </a>
+        <a href="sproduct7.php" style="text-decoration: none;">
+            <div class="pro">
+                <img src="../img/watch7.jpg" alt="">
+                <div class="des">
+                    <span>Watch</span>
+                    <h5>Rolex Sea-Dweller</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                    </div>
+                    <h4>$25000.00</h4>
+                </div>
+                <a href="sproduct7.php"><i class="fa-solid fa-bag-shopping cart2"></i></a>
+
+            </div>
+        </a>
+        <a href="sproduct8.php" style="text-decoration: none;">
+            <div class="pro">
+                <img src="../img/watch9.jpg" alt="">
+                <div class="des">
+                    <span>Watch</span>
+                    <h5>Rolex Archetypal Dive Watch</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$80000.00</h4>
+                </div>
+                <a href="sproduct8.php"><i class="fa-solid fa-bag-shopping cart2"></i></a>
+            </div>
+        </a>
     </div>
 </section>
 <section id="newsletter" class="section-p1 section-m1">
