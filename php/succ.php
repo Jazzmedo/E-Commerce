@@ -33,7 +33,7 @@
 
 <body class='logc'>
     <div class='form-container'>
-        <p>Registration Successfully</p><br><br><a href='login.php'><button class='btn'>Go Back</button>
+        <p>Registration Successfully</p><br><br><a href='login.php'><button class='btn'>Login</button>
     </div>
 </body>
 
