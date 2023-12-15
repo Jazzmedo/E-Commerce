@@ -44,7 +44,7 @@ if (!isset($_SESSION['valid'])) {
                 </li>
                 <li>
                     <i class="fa-regular fa-envelope"></i>
-                    <p>easy@freepalastaine.com</p>
+                    <p>easy@freepalastine.com</p>
                 </li>
                 <li>
                     <i class="fa-solid fa-phone"></i>
