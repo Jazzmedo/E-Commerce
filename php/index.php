@@ -5,6 +5,7 @@ include("config.php");
 if (!isset($_SESSION['valid'])) {
     header("Location:login.php");
 }
+//yj5uy5tr
 ?>
 <!DOCTYPE html>
 <html lang="en">
