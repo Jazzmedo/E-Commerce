@@ -157,8 +157,14 @@ body {
     transition: 0.2 s ease;
 }
 
-.Product1 .pro:hover {
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+.pro:hover {
+    transition: 0.2s all ease-in-out;
+    transform: scale(1.1);
+}
+
+.pro:not(:hover) {
+    transition: 0.2s all ease-in-out;
+    transform: scale(1);
 }
 
 /*Animation shadow*/
