@@ -7,8 +7,17 @@ CREATE TABLE Users(
 
 CREATE TABLE products(
     p_id int PRIMARY KEY,
-    name varchar(100),
-    price float
+    pname varchar(100),
+    price varchar(100),
+    imagee varchar(100)
+    );
+
+CREATE TABLE carts(
+    id int PRIMARY KEY,
+    cname varchar(100),
+    price varchar(100),
+    cimage varchar(100),
+    quantity int
     );
 
 CREATE TABLE Student_Course (
