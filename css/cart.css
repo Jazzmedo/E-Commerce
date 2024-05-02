@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+.message {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 10px;
+    background-color: white;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: box-shadow;
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.btn,
+.delete-btn,
+.option-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.btn:hover,
+.delete-btn:hover,
+.option-btn:hover {
+    background-color: #333;
+}
+
+.btn {
+    background-color: #3498db;
+    margin-top: 10px;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
+
+.option-btn {
+    background-color: orange;
+}
+
+.form-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 70px;
+}
+
+.form-container form {
+    width: 500px;
+    border-radius: 5px;
+    border: border;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.form-container form h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.form-container form .box {
+    width: 100%;
+    border-radius: 5px;
+    border: border;
+    padding: 12px 14px;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.form-container form p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.form-container form p a {
+    color: red;
+}
+
+.form-container form p a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 0 0px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-bottom: 00px;
+}
+
+.container .heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.container .user-profile {
+    padding: 20px;
+    text-align: center;
+    border: border;
+    background-color: white;
+    box-shadow: box-shadow;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.container .user-profile p {
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: var(--black);
+}
+
+.container .user-profile p span {
+    color: var(--red);
+}
+
+.container .user-profile .flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.container .products .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.container .products .box-container .box {
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    position: relative;
+    padding: 20px;
+    background-color: var(--white);
+    width: 350px;
+}
+
+.container .products .box-container .box img {
+    height: 200px;
+}
+
+.container .products .box-container .box .name {
+    font-size: 20px;
+    color: var(--black);
+    padding: 5px 0;
+}
+
+.container .products .box-container .box .price {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 25px;
+}
+
+.container .products .box-container .box input[type="number"] {
+    margin: 10px 0;
+    width: 100%;
+    border: var(--border);
+    border-radius: 5px;
+    font-size: 20px;
+    color: var(--black);
+    padding: 12px 14px
+}
+
+.shopping-cart {
+    padding: 15px 0;
+}
+
+.shopping-cart table {
+    width: 100%;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: box-shadow;
+    background-color: white;
+}
+
+.shopping-cart table thead {
+    background-color: rgb(54, 54, 54);
+}
+
+.shopping-cart table thead th {
+    padding: 10px;
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.shopping-cart table .table-bottom {
+    background-color: #eee;
+}
+
+.shopping-cart table tr td {
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.shopping-cart table tr td:nth-child(1) {
+    padding: 0;
+}
+
+.shopping-cart table tr td input[type="number"] {
+    width: 80px;
+    border: 2px solid black;
+    height: 45px;
+    border-radius: 6px;
+    padding: 12px 14px;
+    font-size: 20px;
+    color: black;
+}
+
+.shopping-cart .cart-btn {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.shopping-cart .disabled {
+    pointer-events: none;
+    background-color: red;
+    opacity: .5;
+    user-select: none;
+}

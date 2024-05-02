@@ -1,10 +1,20 @@
 <?php
-session_start();
 
-include("config.php");
-if (!isset($_SESSION['valid'])) {
-    header("Location:login.php");
+include 'config.php';
+session_start();
+$user_id = $_SESSION['user_id'];
+
+if (!isset($user_id)) {
+    header('location:login.php');
 }
+;
+
+if (isset($_GET['logout'])) {
+    unset($user_id);
+    session_destroy();
+    header('location:login.php');
+}
+;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,18 +29,17 @@ if (!isset($_SESSION['valid'])) {
 </head>
 
 <body>
-    <section id="header">
-        <a href="index.php"><img src="../img/logo.png" class="logo" alt="LuxuryWatches" width="170"></a>
-
+<section id="header">
+        <a href="index.php"><img src="../img/logo.png" class="logo" alt="Luxury Watch" width="170"></a>
         <div>
             <ul id="navbar">
-                <li> <a href="index.php">Home</a> </li>
+                <li> <a class="active" href="index.php">Home</a> </li>
+                <li> <a href="cart.php">Cart</a> </li>
                 <li> <a href="about.php">About</a> </li>
-                <li> <a class="active" href="contact.php">Contact</a> </li>
-                <li> <a href="logout.php">Log Out</a> </li>
+                <li> <a href="contact.php">Contact</a> </li>
+                <li><a href="index.php?logout=<?php echo $user_id; ?>" >Log Out</a></li>
             </ul>
         </div>
-
     </section>
     <section id="contact-details" class="section-p1">
         <div class="details">
