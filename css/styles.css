@@ -7,7 +7,21 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+.message {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 10px;
+  background-color: var(--white);
+  text-align: center;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+  color: var(--black);
+  font-size: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
 .container {
   width: 100vw;
   height: 100vh;

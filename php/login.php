@@ -1,8 +1,25 @@
 <?php
+
+include 'config.php';
 session_start();
-if (isset($_SESSION['valid'])) {
-  header("Location:logout.php");
+
+if (isset($_POST['submit'])) {
+
+  $email = mysqli_real_escape_string($conn, $_POST['email']);
+  $pass = mysqli_real_escape_string($conn, md5($_POST['password']));
+
+  $select = mysqli_query($conn, "SELECT * FROM `user_form` WHERE email = '$email' AND password = '$pass'") or die('query failed');
+
+  if (mysqli_num_rows($select) > 0) {
+    $row = mysqli_fetch_assoc($select);
+    $_SESSION['user_id'] = $row['id'];
+    header('location:index.php');
+  } else {
+    header('location:wrong.php');
+  }
+
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,29 +35,6 @@ if (isset($_SESSION['valid'])) {
 
 <body>
   <div class="container">
-    <?php
-    include("config.php");
-    if (isset($_POST['submit'])) {
-      $email = mysqli_real_escape_string($con, $_POST['email']);
-      $password = mysqli_real_escape_string($con, $_POST['password']);
-
-      $result = mysqli_query($con, "SELECT * FROM users WHERE email='$email' AND passwordd='$password' ") or die("Select Error");
-      $row = mysqli_fetch_assoc($result);
-
-      if (is_array($row) && !empty($row)) {
-        $_SESSION['valid'] = $row['email'];
-        $_SESSION['username'] = $row['username'];
-        $_SESSION['id'] = $row['id'];
-      } else {
-        header("Location:wrong.php");
-      }
-      if (isset($_SESSION['valid'])) {
-        header("Location: index.php");
-      }
-    } else {
-
-
-      ?>
       <div class="img">
         <img src="../img/logo.png" />
       </div>
@@ -74,7 +68,6 @@ if (isset($_SESSION['valid'])) {
           </div>
         </form>
       </div>
-    <?php } ?>
   </div>
   <script type="text/javascript" src="../js/main.js"></script>
 </body>

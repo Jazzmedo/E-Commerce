@@ -7,6 +7,8 @@
     font-family: "Spartan", sans-serif;
 }
 
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -50,6 +52,22 @@ p {
 
 body {
     width: 100%;
+}
+
+#message {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 10px;
+    background-color: var(--white);
+    text-align: center;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+    color: var(--black);
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
 }
 
 #header {
@@ -217,7 +235,7 @@ body {
     right: 10px;
 }
 
-.norm {
+.normo {
     font-size: 14px;
     font-weight: 600;
     padding: 15px 30px;
@@ -228,6 +246,7 @@ body {
     outline: none;
     transition: 0.2s;
     text-align: center;
+    text-decoration: none;
 }
 
 
@@ -243,7 +262,6 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url('../img/b14.png');
-    background-repeat: repeat-x;
 }
 
 #newsletter button {

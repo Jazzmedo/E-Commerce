@@ -1,10 +1,45 @@
 <?php
-session_start();
 
-include("config.php");
-if (!isset($_SESSION['valid'])) {
-    header("Location:login.php");
+include 'config.php';
+session_start();
+$user_id = $_SESSION['user_id'];
+
+if (!isset($user_id)) {
+    header('location:login.php');
 }
+;
+
+if (isset($_GET['logout'])) {
+    unset($user_id);
+    session_destroy();
+    header('location:login.php');
+}
+;
+
+if (isset($_POST['test'])) {
+    $message[] = 'the cart will be shipped soon!';
+    mysqli_query($conn, "DELETE FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
+}
+;
+
+if (isset($_POST['add_to_cart'])) {
+
+    $product_name = $_POST['product_name'];
+    $product_price = $_POST['product_price'];
+    $product_image = $_POST['product_image'];
+    $product_quantity = $_POST['product_quantity'];
+    $select_cart = mysqli_query($conn, "SELECT * FROM `cart` WHERE name = '$product_name' AND user_id = '$user_id'") or die('query failed');
+
+    if (mysqli_num_rows($select_cart) > 0) {
+        $message[] = 'product already added to cart!';
+    } else {
+        mysqli_query($conn, "INSERT INTO `cart`(user_id, name, price, image, quantity) VALUES('$user_id', '$product_name', '$product_price', '$product_image', '$product_quantity')") or die('query failed');
+        $message[] = 'product added to cart!';
+    }
+
+}
+;
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,20 +54,23 @@ if (!isset($_SESSION['valid'])) {
 </head>
 
 <body>
-    <section id="header">
-        <a href="index.php"><img src="../img/logo.png" class="logo" alt="LuxuryWatch" width="170"></a>
 
+    <section id="header">
+        <a href="index.php"><img src="../img/logo.png" class="logo" alt="Luxury Watch" width="170"></a>
         <div>
             <ul id="navbar">
-                <li> <a href="index.php">Home</a> </li>
+                <li> <a class="active" href="index.php">Home</a> </li>
+                <li> <a href="cart.php">Cart</a> </li>
                 <li> <a href="about.php">About</a> </li>
                 <li> <a href="contact.php">Contact</a> </li>
-                <li> <a href="logout.php">Log Out</a> </li>
+                <li><a href="index.php?logout=<?php echo $user_id; ?>">Log Out</a></li>
             </ul>
         </div>
-
     </section>
-    <section id="pro-details" class="section-p1">
+
+
+    <form id="pro-details" class="section-p1" method="post">
+
         <div class="single-pro-image">
             <img src="../img/watch2.jpg" alt="" width="100%" id="main-img">
         </div>
@@ -42,17 +80,49 @@ if (!isset($_SESSION['valid'])) {
             <h4>Rolex Cosmograph Daytona</h4>
             <h3>$ 30000.00</h3>
             <br>
-            <input type="number" value="1" min = "1" max="10">
-            <button class="norm">Add to Cart</button>
+            <input type="number" min="1" name="product_quantity" value="1">
+            <input type="hidden" name="product_image" value="watch2.jpg">
+            <input type="hidden" name="product_name" value="Rolex Cosmograph Daytona">
+            <input type="hidden" name="product_price" value="30000.00">
+            <input id="normo"
+                style="width:165px;font-size: 18px;font-weight: 600;padding:0;color: #000000;border-radius: 4px;cursor: pointer;border: none;outline: none;transition: 0.2s; text-align: center;"
+                type="submit" value="Add to Cart" name="add_to_cart">
+            <a class="normo" style="    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    background-color:#000000;
+    text-align: center;
+    text-decoration: none;" href="cart.php">Cart</a>
+            <?php
+            if (isset($message)) {
+                foreach ($message as $message) {
+                    echo '<div id="message" style="    position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 15px 10px;
+            text-align: center;
+            z-index: 1000;
+            color: var(--black);
+            font-size: 20px;
+            text-transform: capitalize;
+            cursor: pointer;" onclick="this.remove();">' . $message . '</div>';
+                }
+            }
+            ?>
 
         </div>
-    </section>
-
-
+    </form>
 
     <section id="newsletter" class="section-p1 section-m1">
-
     </section>
+
     <footer class="section-p1">
         <div class="col">
             <img class="logo" src="../img/logo.png" alt="" width="190" height="50">
