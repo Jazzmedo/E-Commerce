@@ -24,3 +24,4 @@ CREATE TABLE `products` (
     `image` varchar(100) NOT NULL,
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB AUTO_INCREMENT = 0 DEFAULT CHARSET = utf8mb4;
+/*this is joe*/
