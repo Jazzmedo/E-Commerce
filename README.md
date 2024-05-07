@@ -7,8 +7,8 @@
 ![Static Badge](https://img.shields.io/badge/css-%231572B6?style=for-the-badge&logo=css3&labelColor=black)\
 ![Javascript](https://img.shields.io/badge/Javascript-F0DB4F?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F0DB4F)
 
-## Thanks to
-* Ziad Mahmoud
-* Abdu-Allah Walid
-* Yousef Hamdi
-* Mohamed Mahmoud
+## Contributors :-
+* ### **Ziad Mahmoud**
+* ### **Abdu-Allah Walid**
+* ### **Yousef Hamdi**
+* ### **Mohamed Mahmoud**
