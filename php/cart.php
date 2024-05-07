@@ -17,7 +17,7 @@ if (isset($_GET['logout'])) {
 ;
 if (isset($_POST['test'])) {
     $message[] = 'the cart will be shipped soon!';
-    mysqli_query($conn, "DELETE FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
+    // mysqli_query($conn, "DELETE FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
 }
 ;
 
